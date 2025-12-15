@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIVE FACTORS LLC — Advertising, Marketing & Growth Consulting</title>
+    <meta   
+    name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(6px);
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        section {
+            padding: 120px 80px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            max-width: 900px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("https://images.unsplash.com/photo-1623410439361-22ac19216577?w=1600&auto=format&fit=crop&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+        }
+
+        /* GRID SECTIONS */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #151515;
+            padding: 30px;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        /* PROCESS */
+        .process-step {
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* CONTACT */
+        .contact {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .contact-left {
+            flex: 1;
+        }
+
+        .contact-right {
+            flex: 1;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 14px;
+            background: #111;
+            border: 1px solid #333;
+            color: #fff;
+        }
+
+        button {
+            padding: 14px;
+            background: #fff;
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: #090909;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 900px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .contact {
+                flex-direction: column;
+                height: auto;
+            }
+
+            nav {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div><strong>FIVE FACTORS LLC</strong></div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1>FIVE FACTORS LLC</h1>
+        <p>
+            Strategic advertising, marketing, and brand consulting built for companies that want measurable growth — not noise.  
+            We work at the intersection of data, creativity, and e-commerce to help brands scale efficiently in competitive digital markets.
+        </p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>Who We Are & How We Think</h2>
+    <p>
+        FIVE FACTORS LLC is a consulting-driven agency focused on performance, positioning, and long-term brand value.  
+        We don’t chase trends — we analyze systems, customer behavior, and market signals to build strategies that last.  
+        Our work combines advertising execution, SEO architecture, brand clarity, and e-commerce optimization.  
+        Every recommendation is grounded in data, tested assumptions, and commercial logic.  
+        We partner closely with clients who value precision, transparency, and sustainable growth over short-term hype.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>What We Help You Build</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Advertising & Performance Marketing</h3>
+            <p>
+                We design and manage advertising systems focused on profitability, not vanity metrics.  
+                From audience research to funnel optimization, every campaign is structured for scalability.  
+                Our approach connects paid traffic directly to business objectives and revenue growth.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>SEO & Organic Growth Strategy</h3>
+            <p>
+                We develop SEO strategies based on search intent, site architecture, and competitive analysis.  
+                This includes content frameworks, technical optimization, and long-term ranking stability.  
+                The goal is predictable organic traffic that compounds over time.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Brand & E-commerce Consulting</h3>
+            <p>
+                We help brands define positioning, messaging, and customer experience across digital touchpoints.  
+                For e-commerce, we optimize product structure, conversion paths, and retention logic.  
+                The result is a brand that converts, scales, and stays relevant.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages">
+    <h2>Why Clients Choose FIVE FACTORS</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Strategy Before Execution</h3>
+            <p>
+                We don’t launch campaigns without understanding the full business context.  
+                Every action is connected to a broader growth model.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data-Driven Decision Making</h3>
+            <p>
+                Our recommendations are based on analytics, testing, and measurable outcomes — not assumptions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Clear Communication & Focus</h3>
+            <p>
+                We work transparently, explain our logic, and stay focused on what actually moves results.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+    <h2>Our Working Process</h2>
+
+    <div class="grid-3">
+        <div class="process-step">
+            <h3>1. Analysis & Discovery</h3>
+            <p>
+                We audit your market, competitors, data, and current digital presence to identify leverage points.
+            </p>
+        </div>
+
+        <div class="process-step">
+            <h3>2. Strategy & Planning</h3>
+            <p>
+                We design a clear action plan that aligns advertising, SEO, brand, and conversion strategy.
+            </p>
+        </div>
+
+        <div class="process-step">
+            <h3>3. Execution & Optimization</h3>
+            <p>
+                We implement, measure results, and continuously refine based on real performance data.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <div class="contact-left">
+        <h2>Let’s Talk About Growth</h2>
+        <p>
+            If you’re looking for a strategic partner who understands marketing as a business system, we’d like to hear from you.  
+            Reach out by email and tell us about your goals, challenges, and market.  
+            We review every inquiry and respond personally.
+        </p>
+
+        <p style="margin-top: 30px;">
+            <strong>Email:</strong> team@fivefactors.team<br>
+            <strong>Address:</strong> 8922 Buffalo Ridge Rd, Cleves, OH 45002
+        </p>
+    </div>
+
+    <div class="contact-right">
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea rows="5" placeholder="Tell us about your project"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 FIVE FACTORS LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
